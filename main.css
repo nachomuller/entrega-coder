@@ -1,0 +1,307 @@
+/* Img menú */
+/* Mobile First */
+ 
+header label {
+    display: block;
+    background: none;
+}
+.menu{
+    /*position: absolute ;*/
+    width: 70%;
+    margin-left: -70%;
+
+}
+.menu ul {
+    flex-direction: column;
+}
+.menu li{
+    border-top:2px solid red;
+    background-color: black;
+   
+}
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+header label:hover{
+    cursor: pointer;
+    background:  rgba(255, 255, 255, 30%);
+}
+#btn-menu {
+    display: none;
+}
+
+
+/* General */
+body{
+    background-color:rgba(255, 255, 255, 0.947);
+margin: 0px;
+}
+
+/* Menú */
+header
+    {
+width: 100%;
+display: grid;
+background: black;
+opacity: 0.5;
+height: 60px;
+        }
+/* Navegación */
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.menu li :hover {
+    background: rgba(255, 255, 255, 30%);
+}
+/* Footer General */
+.footer-fmu {
+    text-align: center;
+}
+
+.redes {
+    text-align: center;
+}
+
+.logo-ig {
+width:30px;
+height: 30px;
+}
+
+.logo-tw {
+    width:30px;
+    height: 30px;
+    }
+
+.logo-fb {
+    width:30px;
+    height: 30px;
+    }
+
+.logo-in {
+    width:30px;
+    height: 30px;
+    }
+.portada{
+    width: 100%;
+    
+}
+/* Quiene somos*/
+.historia_txt {position:relative;padding:0 2%;color:rgb(5, 5, 5);text-align:left;}
+.historia_txt p {font-size:130%;line-height:150%;text-align:justify;margin:25px auto;}
+.historia_txt {
+margin: center;
+}
+.historia{font:700 300%/150% 'Lato',Arial,Helvetica,sans-serif;text-transform:uppercase;padding:0 12%;text-align:center;margin:50px auto 35px;letter-spacing:7px;
+
+}
+/*.nosotros{background-color: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 500px 30px 80px;
+grid-gap: 0px;
+
+}*/
+/* Ubicacion*/
+.contenedor{
+background-color: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 500px 30px 80px;
+grid-gap: 0px;
+
+}
+.info{
+display: grid;
+justify-items: center;
+align-items: center;
+color: black;
+grid-gap: 0px;
+flex-direction: column;
+}
+
+/* servicios*/
+.portada-2{
+width: 100%;
+height: 30vh;
+}
+.servicios-varios {
+display:flex;
+}
+
+.serv {
+flex-direction: column;
+}
+
+.titulo-servicio {
+color: #7181eb;
+text-align: right;
+}
+#foto-consola {
+width: 20vh;
+height: 20vh;  
+animation-name: fade-in;
+animation-iteration-count: 1;
+animation-timing-function: ease;
+animation-duration: 3s;
+animation-delay: .5s; 
+}
+.sociales {
+display:flex;
+}
+
+.reuniones {
+flex-direction: column;
+}
+.titulo-eventos{
+color: #7181eb;
+text-align: center;
+}
+#eventos {
+width: 20vh;
+height: 20vh;  
+animation-name: fade-in;
+animation-iteration-count: 1;
+animation-timing-function: ease;
+animation-duration: 3s;
+animation-delay: .5s; 
+}
+@keyframes fade-in {
+0% {
+    transform: translateX(400px);
+    opacity: 0;
+}
+50% {
+    transform: translateX(0px);
+    opacity: .5;
+}
+100% {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+}
+.consola-fondo{
+    background-image: url("public/consola3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 1;
+    width: 200%;
+}
+
+
+/* Form contacto*/
+.form{
+background: rgba(255, 255, 255, 50%);
+margin: auto;
+width: 90%;
+max-width: 400px;
+padding: 4.5em 3em;
+border-radius: 10px;
+box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+text-align: center;
+
+
+}
+
+
+.form_title{
+        font-size: 2rem;
+        margin-bottom: .5em;
+}
+
+.form_paragraph{
+font-weight: 300px;
+}
+.form_link{
+font-weight: 400;
+color: black;
+}
+.form_container{
+margin-top: 3em;
+display: grid;
+gap: 2.5em;
+}
+.form_group{
+position: relative;
+
+}
+.form_input:focus + .form_label{
+transform: translateY(-12px) scale(.7);
+
+}
+
+.form_input{
+width: 100%;
+background: none;
+color: #706c6c;
+font-size: 1rem;
+padding: .6em .3m;
+border: none;
+outline: none;
+border-bottom: 1px solid;
+font-family: 'Roboto', sans-serif;
+}
+.form_label{
+color: var(0 0 0 );
+cursor: pointer;
+position: absolute;
+top: 0;
+left: 5px;
+transform: translateY(1px) ;
+transition: transform .5s, color .3s;
+
+}
+
+@media screen and (min-width: 768px) {
+header label{
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+  
+
+}
+.menu ul {
+    flex-direction: row;
+    
+}
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    background-color: #c9c9c9;
+    margin-left: 100px;
+
+}
+header {
+    width:100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 3fr;
+    background-color: #c9c9c9;
+    height: 60px;
+    }
+    .menu{
+        flex-direction: row;
+       
+    } 
+    .menu li {
+        border-right: solid 1px white;
+        border-top: none;
+        display: block;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+       
+    }
+
+}
