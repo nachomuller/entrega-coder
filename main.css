@@ -4,6 +4,7 @@
 header label {
     display: block;
     background: none;
+    flex-direction: column;
 }
 .menu{
     /*position: absolute ;*/
@@ -32,6 +33,7 @@ header label:hover{
 #btn-menu {
     display: none;
 }
+
 
 
 /* General */
@@ -116,6 +118,7 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 500px 30px 80px;
 grid-gap: 0px;
+flex-direction: column;
 
 }
 .info{
@@ -201,7 +204,8 @@ animation-delay: .5s;
 
 /* Form contacto*/
 .form{
-background: rgba(255, 255, 255, 50%);
+
+background-color: whitesmoke;
 margin: auto;
 width: 90%;
 max-width: 400px;
@@ -285,10 +289,12 @@ header label{
 }
 header {
     width:100%;
-    display: grid;
+    display: flex;
     grid-template-columns: 0.5fr 2fr 3fr;
     background-color: #c9c9c9;
-    height: 60px;
+    height: 100%;
+    justify-content: end;
+  
     }
     .menu{
         flex-direction: row;
